@@ -18,3 +18,4 @@ jobs:
         destination_repo: "git@bitbucket.org:dgibbs64/linuxgsm.git"
         destination_branch: "master"
         ssh_private_key: ${{ secrets.BITBUCKET_SECRET }}
+        

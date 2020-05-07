@@ -6,9 +6,10 @@ jobs:
     steps:
     - name: repo-sync
       uses: wei/git-sync@v2
+      uses: webfactory/ssh-agent@v0.2.0
       with:
         source_repo: "https://github.com/GameServerManagers/LinuxGSM"
         source_branch: "master"
         destination_repo: "https://dgibbs64@bitbucket.org/dgibbs64/linuxgsm"
         destination_branch: "master"
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh_private_key: ${{ secrets.bitbucket }}

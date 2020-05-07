@@ -7,8 +7,8 @@ jobs:
     - name: ssh
       uses: webfactory/ssh-agent@v0.2.0
       with:
-        ssh-private-key: ${{ secrets.bitbucket }}
-        ssh_private_key: ${{ secrets.bitbucket }}
+        ssh-private-key: ${{ secrets.BITBUCKET_SECRET }}
+        ssh_private_key: ${{ secrets.BITBUCKET_SECRET }}
 
     - name: repo-sync
       uses: wei/git-sync@v2
@@ -17,4 +17,4 @@ jobs:
         source_branch: "master"
         destination_repo: "https://dgibbs64@bitbucket.org/dgibbs64/linuxgsm"
         destination_branch: "master"
-        ssh_private_key: ${{ secrets.bitbucket }}
+        ssh_private_key: ${{ secrets.BITBUCKET_SECRET }}

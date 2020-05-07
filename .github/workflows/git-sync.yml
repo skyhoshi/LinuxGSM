@@ -3,15 +3,17 @@ on: push
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
-    steps:
-      name: ssh
-      uses: webfactory/ssh-agent@v0.2.0
-      name: repo-sync
-      uses: wei/git-sync@v2
-      
-      with:
-        source_repo: "https://github.com/GameServerManagers/LinuxGSM"
-        source_branch: "master"
-        destination_repo: "https://dgibbs64@bitbucket.org/dgibbs64/linuxgsm"
-        destination_branch: "master"
-        ssh_private_key: ${{ secrets.bitbucket }}
+      steps:
+        name: ssh
+        uses: webfactory/ssh-agent@v0.2.0
+        with:
+          ssh-private-key: ${{ secrets.bitbucket }}
+          ssh_private_key: ${{ secrets.bitbucket }}
+        name: repo-sync
+        uses: wei/git-sync@v2
+        with:
+          source_repo: "https://github.com/GameServerManagers/LinuxGSM"
+          source_branch: "master"
+          destination_repo: "https://dgibbs64@bitbucket.org/dgibbs64/linuxgsm"
+          destination_branch: "master"
+          ssh_private_key: ${{ secrets.bitbucket }}

@@ -4,9 +4,11 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-    - name: repo-sync
-      uses: wei/git-sync@v2
+      name: ssh
       uses: webfactory/ssh-agent@v0.2.0
+      name: repo-sync
+      uses: wei/git-sync@v2
+      
       with:
         source_repo: "https://github.com/GameServerManagers/LinuxGSM"
         source_branch: "master"

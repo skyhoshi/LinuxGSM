@@ -4,13 +4,13 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-      name: ssh
+    - name: ssh
       uses: webfactory/ssh-agent@v0.2.0
       with:
         ssh-private-key: ${{ secrets.bitbucket }}
         ssh_private_key: ${{ secrets.bitbucket }}
 
-      name: repo-sync
+    - name: repo-sync
       uses: wei/git-sync@v2
       with:
         source_repo: "https://github.com/GameServerManagers/LinuxGSM"

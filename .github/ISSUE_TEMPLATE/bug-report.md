@@ -1,9 +1,9 @@
 ---
-name: Bug report
+name: Bug Report
 about: Found a bug? Raise a report.
-title: 
-labels: 
-assignees: 
+title: "[BUG]"
+labels: 'type: bug'
+assignees: ''
 
 ---
 

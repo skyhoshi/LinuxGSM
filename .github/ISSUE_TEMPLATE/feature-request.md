@@ -1,9 +1,9 @@
 ---
-name: Bug report
-about: Found a bug? Raise a report.
-title: 
-labels: 
-assignees: 
+name: Feature Request
+about: Suggest an idea for LinuxGSM.
+title: "[FEATURE]"
+labels: 'type: feature request'
+assignees: ''
 
 ---
 
@@ -18,7 +18,7 @@ Issues raised here are **NOT** for:
 * Dedicated server issues (e.g Ubuntu, CentOS).
 * Anything not directly related to LinuxGSM development.
 
-For general support visit the **[LinuxGSM-Support](https://linuxgsm.com/support)**.
+For general support visit the **[LinuxGSM Support](https://linuxgsm.com/support)** page.
 
 ***Please use the template below, deleting the above text***
 
@@ -28,21 +28,15 @@ As a [user description], I want [desired action] so that [desired outcome].
 
 ## Basic info
 
-* **Distro:** [Ubuntu 18.04]
+* **Distro:** [Ubuntu 20.04]
 * **Game:** [Garry's Mod]
 * **Command:** [Monitor]
 * **LinuxGSM version:** [v20.1.3]
 
 ## Further Information
 
-A clear description of what the bug is and any ideas on how to resolve it. Plus any further context that might be relevant to the issue.
+A clear description of what the feature is and any ideas on how to achieve this.
 
-## To Reproduce
+## Further Reading
 
-Steps to reproduce the behaviour:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-## Expected behaviour
+Provide any useful documentation or resources that might help.

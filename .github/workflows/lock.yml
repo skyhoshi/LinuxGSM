@@ -2,11 +2,7 @@ name: 'Lock Threads'
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  push:
-    branches:
-      - master
-      - 'develop'      
+    - cron: '0 0 * * *'     
 
 jobs:
   lock:
